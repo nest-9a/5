@@ -1,119 +1,138 @@
 <!DOCTYPE html>
 <html lang="mn">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Бидний бүтээл</title>
-
-    <!-- Font Awesome CDN холбоос -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
-    />
-
-    <!-- Гадны CSS -->
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="buteel.css" />
-    <link rel="stylesheet" href="blog.css" />
-
-    <!-- JQuery CDN холбоос -->
-    <script
-      src="https://code.jquery.com/jquery-3.6.0.min.js"
-      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
-      crossorigin="anonymous"
-    ></script>
-  </head>
-  <body>
-    <!-- Навигацийн хэсэг -->
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Бүтээлийн Блог</title>
+  <link rel="stylesheet" href="buttteel.css" />
+  <link rel="icon" href="nestlogohtml.ico" type="image/x-icon" />
+</head>
+<body>
+  <header>
+    <div class="logo-title">
+      <img src="https://nhs.edu.mn/favicon.ico" alt="School Logo" class="logo spinning" />
+      <h1>Бүтээлийн Блог</h1>
+    </div>
     <nav>
-      <img src="img/favicon.ico" class="logo" alt="" />
-
-      <div class="navigation">
-        <ul>
-          <i id="menu-close" class="fas fa-times"></i>
-				<li><a href="index.html" >Нүүр Хуудас</a></li>
-				<li><a href="buteel.html"class="active">Бүтээлийн танилцуулга</a></li>
-				<li><a href="course-inner.html">Хичээлийн тухай</a></li>
-				<li><a href="contact.html">Холбоо барих</a></li>
-        </ul>
-
-        <img src="img/menu.png" id="menu-btn" alt="" />
-      </div>
+      <ul>
+        <li><a href="#home">Нүүр Хуудас</a></li>
+        <li><a href="#idea">Танилцуулга</a></li>
+        <li><a href="#usage">Хэрэглээ</a></li>
+        <li><a href="#development">Ажлын явц</a></li>
+        <li><a href="#results">Үр дүн</a></li>
+        <li><a href="#materials">Материалууд</a></li>
+      </ul>
     </nav>
-    
-    <section id="about-home">
-      <h2>Блог.</h2>
+  </header>
+
+  <main>
+    <section id="home">
+      <h2>Тавтай морил!</h2>
+      <p>Та одоо 9А ангийн <strong>Номин, Энхномун, Анарт, Индра</strong> нарын боловсруулсан бүтээлийн блог дээр зочилж байна. .</p>
+      <p> Энэхүү блог нь бидний төсөл, хөгжүүлэлтийн явц, бүтээлийн онцлог, болон хэрэглээний тухай дэлгэрэнгүй танилцуулах зорилготой юм.
+        Бидний зорилго бол сурагчдын мэдлэгийг сорихын зэрэгцээ тэдний чөлөөт цагийг хөгжилтэй, үр бүтээлтэй өнгөрүүлэх ухаалаг тоглоом хөгжүүлэх байсан юм.</p>
     </section>
-    
-    <section id="blog-container">
-      <div class="blogs">
-        <div class="post">
-          <img src="img/b1.jpg" alt="" />
-          <h3>Вэб хөгжүүлэлтийг хамгийн хялбар аргаар сурах</h3>
-          <p>
-            Лорем ипсум dolor sit amet consectetur adipisicing, elit. Optio
-            enim, rerum voluptas non dolorem architecto libero, tempora laborum
-            fugiat, deleniti, iusto maxime rem similique laudantium nostrum ad
-            quod esse ullam modi illo?
-          </p>
-          <a href="post.html">Дэлгэрэнгүй унших</a>
-        </div>
 
-        <div class="post">
-          <img src="img/b2.jpg" alt="" />
-          <h3>Вэб хөгжүүлэлтийг хамгийн хялбар аргаар сурах</h3>
-          <p>
-            Лорем ипсум dolor sit amet consectetur adipisicing, elit. Optio
-            enim, rerum voluptas non dolorem architecto libero, tempora laborum
-            fugiat, deleniti, iusto maxime rem similique laudantium nostrum ad
-            quod esse ullam modi illo?
-          </p>
-          <a href="post.html">Дэлгэрэнгүй унших</a>
-        </div>
-
-        <div class="post">
-          <img src="img/b3.jpg" alt="" />
-          <h3>Вэб хөгжүүлэлтийг хамгийн хялбар аргаар сурах</h3>
-          <p>
-            Лорем ипсум dolor sit amet consectetur adipisicing, elit. Optio
-            enim, rerum voluptas non dolorem architecto libero, tempora laborum
-            fugiat, deleniti, iusto maxime rem similique laudantium nostrum ad
-            quod esse ullam modi illo?
-          </p>
-          <a href="post.html">Дэлгэрэнгүй унших</a>
-        </div>
-      </div>
-
-      <div class="cate">
-        <h2>Категориуд</h2>
-        <hr />
-        <a href="#">Вэб хөгжүүлэлт</a>
-        <hr />
-        <a href="#">Вэб дизайн</a>
-        <hr />
-        <a href="#">Апп хөгжүүлэлт</a>
-        <hr />
-        <a href="#">Фронтэнд вэб</a>
-        <hr />
-        <a href="#">Python программчлал</a>
-        <hr />
-        <a href="#">Javascript техникууд</a>
-      </div>
+    <section id="idea">
+      <h2>Бүтээлийн Танилцуулга</h2>
+      <h3>Санаанаас Хэрэгжилт хүртэл</h3>
+      <p>Манай багийн гишүүд өөр өөрсдийн санааг хуваалцаж, хэлэлцсэний үр дүнд бид нийтлэг нэг зүйлд санал нэгдсэн — боловсролын аппликейшн бүтээх.
+        Бид зөвхөн мэдлэг өгөөд зогсохгүй, сурагчдын сонирхлыг татахуйц хөгжилтэй уур амьсгалыг бүрдүүлэх тоглоом хийхээр зорьсон. Апп дотроо 10 асуулт бүхий сорил, онооны систем, шагнал урамшуулалтай байхаар төлөвлөсөн.</p>
+      <h3>Түлхүүр үгс</h3>
+      <p>Мэдлэгээ шалгах, оюун ухаанаа хөгжүүлэх, тархи сорих, сонирхолтой, хөгжилтэй асуулт хариулттай тоглоом, сурагчдад зориулсан ухаалаг апп</p>
     </section>
-    <!-- Блогийн агуулга дуусна -->
 
-   
+    <section id="usage">
+      <h2>Хэрэглэх Заавар</h2>
+      <p>1. Таблетаа асааж, тоглоомыг ажиллуулна.<br>
+         2. Апп автоматаар нээгдэнэ.         <br>
+         3. Сорилоо сонгож, асуултуудын хариултыг сонгон тоглож эхлээрэй.Асуулт бүрийн дараа оноо тооцогдож, нийт онооны дагуу таныг урамшуулна.
+         </p>
+      <h3>Шагнал ба Үр дагаврын Систем</h3>
+      <ul>
+        <li><strong>✨ 0-2 оноо: </strong>бага зэрэг ус цацна.</li>
+        <li><strong>🎵 3-4 оноо:</strong> чангаар хашгирна</li>
+        <li><strong>🍭 5-7 оноо: </strong> Сайн байна! Та амтат чихэр шагнал авна. (чихэр гэх мэт)</li>
+        <li><strong>🧃 8-10 оноо: </strong>  Гайхалтай! Том снэк буюу ундаа зэрэг супер шагнал хүлээж байна!(снакс, уух зүйл)</li>
+      </ul>
+    </section>
 
-    <script>
-      // Менюг харуулах
-      $("#menu-btn").click(function () {
-        $("nav .navigation ul").addClass("active");
-      });
+    <section id="development">
+      <h2>Ажлын Явц</h2>
+      <h3>Цахилгаан Холболт ба Хэсгүүд</h3>
+      <p>Arduino, сенсор, спикер, сэнс болон бусад эд ангиудыг холбож, App Inventor апптай холбосон.</p>
+      <h3>Аппликейшн</h3>
+      <p>MIT App Inventor ашиглан Bluetooth холбоо бүхий апп хийсэн. Блок кодчилол ашигласан.</p>
+      <h3>Програмчлал</h3>
+      <p>Arduino IDE болон App Inventor дээр кодчилсон. Асуултууд, оноо шалгах, Bluetooth командуудыг зохион байгуулсан.</p>
+      <h3>Дизайн</h3>
+      <p>3D загварчлал болон лазераар зүссэн хайрцагт бүх төхөөрөмжийг суурилуулсан.</p>
+    </section>
 
-      // Менюг хаах
-      $("#menu-close").click(function () {
-        $("nav .navigation ul").removeClass("active");
-      });
-    </script>
-  </body>
+    <section id="results">
+      <h2>Үр Дүн</h2>
+      <h3>Дүгнэлт</h3>
+      <p>Сурагчдын мэдлэгийг сорих, ашиглахад хялбар, хөгжилтэй апп бүтээж чадсан.</p>
+      <h3>Хөгжүүлэлт</h3>
+      <p>Илүү олон хэл, дуу хоолойны функц, шинэ шагналын систем нэмж болох юм.</p>
+      <h3>Сул Талууд</h3>
+      <p>Bluetooth холбоог тогтворжуулах, асуултуудыг сонирхолтой болгоход их хугацаа орсон.</p>
+    </section>
+
+    <section id="materials">
+      <h2>Материалууд</h2>
+      <ul>
+        <li>Arduino UNO – микроконтроллер</li>
+        <li>Servo Motor – эргэлт үүсгэгч</li>
+        <li>RFID – таних төхөөрөмж</li>
+        <li>L298N – мотор драйвер</li>
+        <li>Pump – шингэн хөдөлгөгч</li>
+        <li>MIT App Inventor – апп хөгжүүлэх хэрэгсэл</li>
+        <li>Таблет, 3D хайрцаг, цаас, картон</li>
+      </ul>
+    </section>
+  </main>
+  <section id="materials">
+    <h2>Материалын зургууд</h2>
+    <div class="material-gallery">
+      <div class="material-box">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/3/38/Arduino_Uno_-_R3.jpg" alt="Arduino UNO" class="material-img" />
+        <h3 class="material-name">Arduino UNO</h3>
+        <p class="material-desc">Төслийн үндсэн микроконтроллер. Бүх төхөөрөмжийн ажиллагааг удирддаг.</p>
+      </div>
+      <div class="material-box">
+        <img src="https://circuitdigest.com/sites/default/files/inlineimages/Servo-Motor.jpg" alt="Servo Motor" class="material-img" />
+        <h3 class="material-name">Серво Мотор</h3>
+        <p class="material-desc">Эргэлтийн хөдөлгөөн үүсгэхэд ашиглагддаг. Тоглоомын механик хэсэгт ашигласан.</p>
+      </div>
+      <div class="material-box">
+        <img src="https://quartzcomponents.com/cdn/shop/products/RC522-RFID_87623219-a5d0-4848-90fd-2dbdc567c8a7_grande.jpg?v=1653906079" alt="RFID" class="material-img" />
+        <h3 class="material-name">RFID Уншигч</h3>
+        <p class="material-desc">Карт таних технологи. Сорил эхлүүлэх болон хэрэглэгч танихад хэрэглэнэ.</p>
+      </div>
+      <div class="material-box">
+        <img src="https://srrobotics.in/wp-content/uploads/2019/07/52_1.jpg" alt="L298N Motor Driver" class="material-img" />
+        <h3 class="material-name">L298N Мотор Драйвер</h3>
+        <p class="material-desc">Моторуудыг удирдах гүйдлийн драйвер. Серво болон насосонд хэрэглэсэн.</p>
+      </div>
+      <div class="material-box">
+        <img src="https://www.spxflow.com/assets/half-width/johnson-pump-centrifugal-combinorm-80-200-02.jpg" alt="Pump" class="material-img" />
+        <h3 class="material-name">Шингэн Насос</h3>
+        <p class="material-desc">Шингэн цацах үүрэгтэй. Бага оноо авсан үед ажилладаг.</p>
+      </div>
+      <div class="material-box">
+        <img src="https://cdn.prod.website-files.com/61d6943d6b59241863c825d6/62cfb67fd0030be5352a8476_mit.webp" alt="MIT App Inventor" class="material-img" />
+        <h3 class="material-name">MIT App Inventor</h3>
+        <p class="material-desc">Апп хөгжүүлэлтийн хэрэгсэл. Bluetooth ашиглан төхөөрөмжтэй холбогддог.</p>
+      </div>
+    </div>
+  </section>
+    
+
+  <footer>
+    <p>© 2025 Бүтээлийн Блог | NEST Education IT School</p>
+  </footer>
+</body>
 </html>
+
+
